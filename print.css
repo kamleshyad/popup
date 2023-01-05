@@ -1,0 +1,25 @@
+/*** GLOBAL SETTING ***/
+body {margin:0; padding:0;font:normal 18px 'Roboto', sans-serif; color:#010101; line-height:normal;}
+
+/*** GLOBAL SELECTORS ***/
+a{ color:#5a1613; transition: .3s ease;}
+a:hover{ color:#000000;} 
+
+/*Main Content*/
+.container{ width:1290px; margin:0 auto;}
+
+.pops .popwrap{margin-top: 50px;}
+.pops .popwrap ul{font-size: 0; margin-left: -3%;}
+.pops .popwrap ul li{display: inline-block; vertical-align: middle; width: 30.33%; margin-left: 3%; margin-top: 30px; padding: 20px; box-sizing: border-box; border: 3px solid #000; border-radius: 10px;}
+.pops .popwrap ul li h2{font-size: 30px; font-weight: 700; line-height: normal; margin-bottom: 15px; color: #35a785; text-align: center;} 
+.pops .popwrap ul li p{font-size: 20px; font-weight: 300; line-height: 30px;}
+.pops .popwrap ul li .readmorebtn{margin-top: 15px;}
+.pops .popwrap .readmorebtn a{display: inline-block; font-size: 18px; font-weight: 400; line-height: normal; }
+
+.pops .popwrap ul li .popup{position: fixed; top: 0; left: 0; height: 100vh; width: 100vw; opacity: 0; visibility: hidden; background-color: rgba(0, 0, 0, 0.7); z-index: 1000; transition:500ms all;}
+
+.pops .popwrap ul li .popup.is-visible{opacity: 1; visibility: visible; transition: 1s all;}
+
+.pops .popwrap .popupcontainer{transform: translate(-50% , -50%); width: 80%; background: #fff; transition:500ms all; position: relative; top: 50%; border-radius: 10px; padding: 20px; text-align: center; left: 50%;}
+
+.pops .popupcontainer .popup-close{position: absolute; top: 8px; font-size: 18px; right: 8px;}
